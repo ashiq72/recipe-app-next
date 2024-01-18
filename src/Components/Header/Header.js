@@ -6,11 +6,11 @@ import { BsCart } from "react-icons/bs";
 function Header() {
   return (
     <div className="shadow">
-      <div className="w-full max-w-7xl mx-auto flex justify-between py-6">
+      <div className="w-full max-w-7xl mx-auto flex justify-between py-6 px-6 2xl:px-0 items-center">
         {/* Menu Link  */}
         <div className="flex gap-4">
           <Link
-            href="/home"
+            href="/"
             className="hover:text-orange-600	duration-300 font-medium font-sans"
           >
             Home
