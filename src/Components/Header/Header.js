@@ -16,32 +16,38 @@ function Header() {
             Home
           </Link>
           <Link
-            href="/home"
+            href="/"
             className="hover:text-orange-600	duration-300 font-medium font-sans"
           >
             About
           </Link>
           <Link
-            href="/home"
+            href="/"
             className="hover:text-orange-600	duration-300 font-medium font-sans"
           >
             Contact
           </Link>
         </div>
         {/* Logo  */}
-        <div className="flex items-center gap-1">
+        <Link
+          href="/"
+          className="flex items-center gap-1 cursor-pointer hover:bg-orange-50 rounded-lg duration-300 px-2"
+        >
           <h1 className="font-medium text-4xl font-serif">Cook</h1>
           <span className="text-orange-600 pt-1 text-2xl">
             <GiCampCookingPot />
           </span>
           <h1 className="font-medium text-4xl font-serif">Talk</h1>
-        </div>
+        </Link>
         {/* Cart  */}
-        <div>
+        <Link
+          href=""
+          className="hover:bg-orange-50 rounded-full p-2 duration-300"
+        >
           <span className="text-2xl">
             <BsCart />
           </span>
-        </div>
+        </Link>
       </div>
     </div>
   );
