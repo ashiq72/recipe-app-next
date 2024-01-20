@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { MdErrorOutline } from "react-icons/md";
 import toast from "react-hot-toast";
 
-export default function CreateRecipe() {
+function EditRecipe() {
   const {
     register,
     handleSubmit,
@@ -57,7 +57,7 @@ export default function CreateRecipe() {
     <div className="py-8 w-full max-w-3xl mx-auto px-6 2xl:px-0">
       <div>
         <h1 className="text-4xl font-bold font-serif text-gray-800">
-          Create Recipe
+          Edit A Recipe
         </h1>
       </div>
       <div className="py-6">
@@ -68,7 +68,7 @@ export default function CreateRecipe() {
               htmlFor="title"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
-              Recipe A Title
+              Recipe Title
             </label>
             <input
               {...register("title", {
@@ -175,3 +175,5 @@ export default function CreateRecipe() {
     </div>
   );
 }
+
+export default EditRecipe;
